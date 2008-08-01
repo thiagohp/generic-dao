@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+	<properties>
+		<author email="thiagohp at gmail dot com">
+			Thiago H. de Paula Figueiredo
+		</author>
+		<title>Generic-DAO</title>
+	</properties>
+	<meta name="keyword"
+		content="java, tapestry, ioc, hibernate, integration, acegi, spring, generic, dao" />
+	<body>
+		<section name="Generic DAO">
+			<p>
+				This package provides some interfaces that define generic DAOs
+				(Data Access Object). This package is completely
+				implementation-independent and has no dependencies.
+			</p>
+			<p>
+			</p>
+		</section>
+	</body>
+</document>

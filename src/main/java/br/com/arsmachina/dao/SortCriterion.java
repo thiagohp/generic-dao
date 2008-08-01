@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package net.sf.arsmachina.dao;
+package br.com.arsmachina.dao;
 
 /**
  * Used to represent a sorting criterion (constraint) to be applied to a method that returns objects.
