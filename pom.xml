@@ -5,7 +5,7 @@
 	<groupId>br.com.arsmachina</groupId>
 	<artifactId>generic-dao</artifactId>
 	<packaging>jar</packaging>
-	<version>1.0</version>
+	<version>0.9</version>
 	<name>Generic DAO</name>
 	<description>
 		Provides some interfaces that define generic DAOs (Data
@@ -13,13 +13,55 @@
 		implementation-independent and has no dependencies.
 	</description>
 	<inceptionYear>2008</inceptionYear>
-	<url>http://ars-machina.sourceforge.net/generic-dao</url>
+	<url>http://www.arsmachina.com.br/project/generic-dao</url>
 	<parent>
 		<groupId>br.com.arsmachina</groupId>
 		<artifactId>parent</artifactId>
-		<version>1.0</version>
+		<version>0.9</version>
 		<relativePath>../parent/pom.xml</relativePath>
 	</parent>
+	<organization>
+		<name>Thiago H. de Paula Figueiredo (ThiagoHP)</name>
+		<url>http://www.arsmachina.com.br/thiagohp</url>
+	</organization>
+	<licenses>
+		<license>
+			<name>Apache Software License 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+	<scm>
+		<connection>
+			scm:svn:https://ars-machina.svn.sourceforge.net/svnroot/ars-machina
+		</connection>
+		<url>http://ars-machina.svn.sourceforge.net/viewvc/ars-machina/</url>
+	</scm>
+	<mailingLists>
+		<mailingList>
+			<name>Ars Machina project mailing list</name>
+			<archive>
+				http://sourceforge.net/mailarchive/forum.php?forum_name=ars-machina-users
+			</archive>
+		</mailingList>
+	</mailingLists>
+	<issueManagement>
+		<url>http://sourceforge.net/tracker/?group_id=196798</url>
+	</issueManagement>
+	<developers>
+		<developer>
+			<id>thiagohp</id>
+			<name>Thiago H. de Paula Figueiredo (Thiago HP)</name>
+			<email>thiagohp@users.sourceforge.net</email>
+			<url>http://thiagohp.blogspot.com</url>
+			<roles>
+				<role>Creator</role>
+				<role>Developer</role>
+			</roles>
+			<timezone>GMT-3</timezone>
+		</developer>
+	</developers>
+	
 	<reporting>
 		<plugins>
 			<plugin>
@@ -70,4 +112,21 @@
 			-->
 		</plugins>
 	</reporting>
+	<distributionManagement>
+		<site>
+			<id>arsmachina.site</id>
+			<name>Ars Machina Project site</name>
+			<url>scp://arsmachina.com.br/var/www/arsmachina/project/generic-dao</url>
+		</site>
+		<repository>
+			<id>arsmachina.release.repository</id>
+			<name>Ars Machina Project release repository</name>
+			<url>scp://arsmachina.com.br/var/www/arsmachina/project/maven/releases</url>
+		</repository>
+		<snapshotRepository>
+			<id>arsmachina.release.repository</id>
+			<name>Ars Machina Project release repository</name>
+			<url>scp://arsmachina.com.br/var/www/arsmachina/project/maven/snapshots</url>
+		</snapshotRepository>
+	</distributionManagement>
 </project>
