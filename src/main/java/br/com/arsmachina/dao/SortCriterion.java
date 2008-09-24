@@ -52,7 +52,7 @@ public class SortCriterion {
 	}
 
 	/**
-	 * @return a {@link boolean}.
+	 * @return a <code>boolean</code>.
 	 */
 	public boolean isAscending() {
 		return ascending;
