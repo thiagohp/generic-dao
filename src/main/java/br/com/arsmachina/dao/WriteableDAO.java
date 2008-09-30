@@ -20,7 +20,7 @@ import java.io.Serializable;
  * Interface that defines a read-write, generic and generified Data Access Object (DAO) for a given
  * entity class.
  * 
- * @author Thiago H. de Paula Figueiredo (ThiagoHP)
+ * @author Thiago H. de Paula Figueiredo
  * @param <T> the entity class related to this DAO.
  * @param <K> the type of the field that represents the entity class' primary key.
  */
@@ -53,16 +53,6 @@ public interface WriteableDAO<T, K extends Serializable> {
 	 * @param object a <code>T</code>.
 	 */
 	void update(T object);
-
-	/**
-	 * Merges an object with the current persistence context. This method only has meaningful
-	 * implementations when used with ORM frameworks that have a merge concept (Hibernate, JPA,
-	 * etc).
-	 * 
-	 * @param object a <code>T</code>.
-	 * @return a <code>T</code>.
-	 */
-	T merge(T object);
 
 	/**
 	 * Removes an object from the current persistence context. This method only has meaningful

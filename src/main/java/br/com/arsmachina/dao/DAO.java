@@ -20,7 +20,7 @@ import java.io.Serializable;
  * Interface that defines a read-write, generic and generified Data Access Object (DAO) for a given
  * entity class. It extends {@link ReadableDAO} and {@link WriteableDAO}.
  * 
- * @author Thiago H. de Paula Figueiredo (ThiagoHP)
+ * @author Thiago H. de Paula Figueiredo
  * @param <T> the entity class related to this DAO.
  * @param <K> the type of the field that represents the entity class' primary key.
  */

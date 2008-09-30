@@ -17,7 +17,7 @@ package br.com.arsmachina.dao;
 /**
  * Used to represent a sorting criterion (constraint) to be applied to a method that returns objects.
  * 
- * @author Thiago H. de Paula Figueiredo (ThiagoHP)
+ * @author Thiago H. de Paula Figueiredo
  */
 public class SortCriterion {
 

@@ -21,11 +21,10 @@ import java.util.List;
  * Interface that defines a read-only, generic and generified Data Access Object (DAO) for a given
  * entity class.
  * 
- * @author Thiago H. de Paula Figueiredo (ThiagoHP)
+ * @author Thiago H. de Paula Figueiredo
  * @param <T> the entity class related to this DAO.
  * @param <K> the type of the field that represents the entity class' primary key.
  */
-
 public interface ReadableDAO<T, K extends Serializable> {
 
 	/**
@@ -56,6 +55,14 @@ public interface ReadableDAO<T, K extends Serializable> {
 	 * @return a {@link List} of <code>T</code>.
 	 */
 	List<T> findAll();
+
+	/**
+	 * Executes a query by example.
+	 * 
+	 * @param example a <code>T</code>.
+	 * @return a {@link List} of <code>T</code>.
+	 */
+	List<T> findByExample(T example);
 
 	/**
 	 * Refreshes an object, overwriting its fields with values coming from the object store.
