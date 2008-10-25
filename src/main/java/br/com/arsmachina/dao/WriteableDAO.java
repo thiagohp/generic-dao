@@ -48,16 +48,23 @@ public interface WriteableDAO<T, K extends Serializable> {
 	void save(T object);
 
 	/**
-	 * Updates an object.
+	 * Updates an object. If it is not persistent, an {@link IllegalArgumentException} is 
+	 * thrown. The return value must be the object that is attached to the persistence
+	 * context of the underlying implementation, if it exists.  Otherwise, this method
+	 * simply returns the object passed as a parameter. This return value was added
+	 * to deal ORM frameworks like JPA, that do not attach the updated object
+	 * to the persistence context. See <code>EntityManager.merge()</code>. 
 	 * 
 	 * @param object a <code>T</code>.
+	 * @return a <code>T</code>.
+	 * @throws IllegalArgumentException if <code>object</code> is null or not persistent.
 	 */
-	void update(T object);
+	T update(T object);
 
 	/**
 	 * Removes an object from the current persistence context. This method only has meaningful
-	 * implementations when used with ORM frameworks that have an evict concept (Hibernate, JPA,
-	 * etc).
+	 * implementations when used with ORM frameworks that have an evict concept (Hibernate, etc).
+	 * Otherwise, implementations this method will do nothing.
 	 * 
 	 * @param object a <code>T</code>.
 	 * @return a <code>T</code>.
