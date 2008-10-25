@@ -72,6 +72,16 @@ public interface ReadableDAO<T, K extends Serializable> {
 	void refresh(T object);
 
 	/**
+	 * Reattaches an object to the persistence context, if there is one. The object store
+	 * must not be changed. The attached object, which not necessarily is the one passed
+	 * as a parameter, is returned.
+	 * 
+	 * @param object a <code>T</code>.
+	 * @return object a <code>T</code>.
+	 */
+	T reattach(T object);
+
+	/**
 	 * Returns the all instances of the related entity class, but in a paginated fashion.
 	 * 
 	 * @param firstResult an <code>int</code> with the index of the first object to be returned.
