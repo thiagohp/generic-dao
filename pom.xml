@@ -5,7 +5,7 @@
 	<groupId>br.com.arsmachina</groupId>
 	<artifactId>generic-dao</artifactId>
 	<packaging>jar</packaging>
-	<version>0.9</version>
+	<version>1.0</version>
 	<name>Generic DAO</name>
 	<description>
 		Provides some interfaces that define generic DAOs (Data
@@ -17,7 +17,7 @@
 	<parent>
 		<groupId>br.com.arsmachina</groupId>
 		<artifactId>parent</artifactId>
-		<version>0.9</version>
+		<version>1.0</version>
 		<relativePath>../parent/pom.xml</relativePath>
 	</parent>
 </project>
