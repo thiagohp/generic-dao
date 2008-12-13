@@ -1,0 +1,5 @@
+1.0
+* Added the reattach() method to ReadableDAO and DAO.
+
+0.9
+* Initial version
