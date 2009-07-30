@@ -24,9 +24,17 @@ public class SortCriterion {
 	private String property;
 
 	private boolean ascending;
+	
+	/**
+	 * Creates an ascending sort criterion. The same as <code>SortCriterion(property, true)</code>.
+	 * @param property
+	 */
+	public SortCriterion(String property) {
+		this(property, true);
+	}
 
 	/**
-	 * Single constructor of this class.
+	 * Constructor that receives a property name and a sort indicator.
 	 * 
 	 * @param property a {@link String} containing the property to be used to sort the returned
 	 * objects. It can be a property path. It cannot be null.
