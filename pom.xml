@@ -17,6 +17,21 @@
 		<version>1.2.15</version>
 <!-- 		<relativePath>../parent/pom.xml</relativePath> -->
 	</parent>
+	<licenses>
+		<license>
+			<name>Apache Software License 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+	<scm>
+		<connection>scm:git:https://github.com/thiagohp/generic-dao.git</connection>
+	    <developerConnection>scm:git:https://github.com/thiagohp/generic-dao.git</developerConnection>
+	    <url>https://github.com/thiagohp/generic-dao.git</url>	
+	</scm>
+	<issueManagement>
+		<url>https://github.com/thiagohp/generic-dao/issues</url>
+	</issueManagement>
 	<build>
 		<plugins>
 			<plugin>
