@@ -1,4 +1,4 @@
-// Copyright 2008-2009 Thiago H. de Paula Figueiredo
+// Copyright 2008-2013 Thiago H. de Paula Figueiredo
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -29,9 +29,9 @@ public interface ReadableDAO<T, K extends Serializable> {
 
 	/**
 	 * Returns the total number of objects of this class.
-	 * @return an <code>int</code>.
+	 * @return an <code>long</code>.
 	 */
-	int countAll();
+	long countAll();
 	
 	/**
 	 * Returns the object with a given primary key value.
@@ -65,11 +65,14 @@ public interface ReadableDAO<T, K extends Serializable> {
 	List<T> findByExample(T example);
 
 	/**
-	 * Refreshes an object, overwriting its fields with values coming from the object store.
-	 * 
+	 * Refreshes an object, getting the most recent version of its data from the object store.
+	 * It should return the same object passed as a parameter, overwritten with the most recent data,
+	 * if possibile, but this isn't a requirement.
+	 *  
 	 * @param object a <code>T</code>
+	 * @return a <code>T</code>, which may or may not be the same object passed in the parameter.
 	 */
-	void refresh(T object);
+	T refresh(T object);
 
 	/**
 	 * Reattaches an object to the persistence context, if there is one. The object store

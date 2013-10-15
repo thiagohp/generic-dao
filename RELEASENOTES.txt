@@ -1,0 +1,10 @@
+2.0.0
+* Changed the return type of ReadableDAO.countAll() from int to long.
+* Changed the return type of ReadableDAO.refresh() from void to T.
+* Changed the parent dependency version to 1.2.0.
+
+1.0
+* Added the reattach() method to ReadableDAO and DAO.
+
+0.9
+* Initial version
